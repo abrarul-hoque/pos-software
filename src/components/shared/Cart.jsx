@@ -7,15 +7,15 @@ const Cart = ({ addedProducts, total, vat, handleCreateQuotation }) => {
         <div className="w-full border p-3 shadow-md rounded-md">
             <div className="flex justify-between">
                 <p>Total:</p>
-                <p>{total.toFixed(2)}</p>
+                <p className="text-end">{total.toFixed(2)}</p>
             </div>
             <div className="flex justify-between">
                 <p>VAT ({vat}%):</p>
-                <p>{((total * vat) / 100).toFixed(2)}</p>
+                <p className="text-end">{((total * vat) / 100).toFixed(2)}</p>
             </div>
             <div className="flex justify-between">
                 <p>Net Payable:</p>
-                <p>{netPayable.toFixed(2)}</p>
+                <p className="text-end">{netPayable.toFixed(2)}</p>
             </div>
             <button className="btn btn-primary mt-4" onClick={handleCreateQuotation}>
                 Create Quotation

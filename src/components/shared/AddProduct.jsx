@@ -148,7 +148,7 @@ const AddProduct = ({ handleAddProduct, addedProducts }) => {
 
     return (
         <div className="flex flex-col lg:flex-row gap-4">
-            <div className="w-full lg:w-4/5 border p-4 shadow-md rounded-md">
+            <div className="w-full border p-4 shadow-md rounded-md">
                 <form onSubmit={handleAdd}>
                     <h3 className="font-bold mb-3">Add Product</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">

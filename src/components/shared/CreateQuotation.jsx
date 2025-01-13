@@ -19,7 +19,7 @@ const CreateQuotation = () => {
 
     return (
         <div>
-            <h2>Create Quotation</h2>
+            <h2 className="text-center text-3xl my-2 font-bold underline mt-4">Create Quotation</h2>
             <div>
                 <form className="card-body">
                     <div className='flex flex-col md:flex-row gap-4'>
@@ -66,10 +66,9 @@ const CreateQuotation = () => {
                     </div>
 
                     {/* Add Product */}
-                    <div className="flex flex-col md:flex-row lg:flex-row">
+                    <div className="flex flex-col md:flex-row lg:flex-row gap-2">
                         <div className="w-10/12">
                             <AddProduct handleAddProduct={handleAddProduct} addedProducts={addedProducts} />
-
                         </div>
                         {/* Cart */}
                         <div className="w-2/12">
