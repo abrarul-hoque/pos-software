@@ -1,0 +1,7 @@
+.menu li > *:not(ul, .menu-title, details, .btn).active{
+    background-color: red;
+}
+
+.menu li > *:not(ul, .menu-title, details, .btn):active, .menu li > *:not(ul, .menu-title, details, .btn).active, .menu li > details > summary:active{
+    background-color: green;
+}
